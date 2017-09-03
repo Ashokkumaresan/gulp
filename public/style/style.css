@@ -1,0 +1,393 @@
+body{
+	margin:0;
+	padding:0;
+	  position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+		background:#22313a;
+		font-family: Arial Narrow;
+		color:#fff;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        transition:all linear 0.5s;
+
+}
+img{
+    transform:scale(1);
+}
+input[type="file"]{
+	text-indent: 0px!important;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="file"]{
+border:none;
+	background:transparent;
+	color:#fff;
+    text-align: center;
+	outline:none;
+	font-family: Arial Narrow;
+}
+select{
+	background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: Arial Narrow;
+    width: inherit;
+    padding: 15px 0;
+    font-size: 20px;
+}
+option{
+	color:#000;
+	padding: 15px 0;
+	font-family: Arial Narrow;
+}
+
+.login{
+	  
+}
+.header-strip{
+	background:#1e2a31;
+	height:300px;
+	width:100%;
+	float:left;
+}
+.dashboardheader-strip{
+	background:#1e2a31;
+	height:250px;
+	width:100%;
+	float:left;
+}
+.login-holder{
+	width:350px;	
+	height:400px;
+	margin:200px auto;	
+	position:relative;
+}
+.logo-holder{
+	background:#22313a;
+	width:inherit;	
+	height:100px;	
+	float:left
+}
+.loginbody-holder{
+	background:#2b3942;
+	float:left;
+	height:250px;
+	width:inherit;
+	padding-top:10px;
+}
+.loginbody-holder ul{
+	list-style:none;
+}
+.has-error{
+	border-bottom: 1px solid #ff0000!important;
+}
+.loginbody-holder ul li{
+	    width: 100%;
+    margin-left: -20px;
+		padding: 15px 10px;
+	border-bottom: 1px solid #aaa;
+}
+
+.loginbody-holder ul li:last-child{
+	border:none;
+}
+.loginbody-holder ul li input[type="email"],.loginbody-holder ul li input[type="password"]{
+padding: 10px 0!important;
+}
+.loginbody-holder ul li input[type="submit"]{
+	    border: none;
+    color: #fff;
+    background: #22313a;
+    padding: 10px 20px;
+	outline:none;
+	box-shadow: 0px 0px 3px 0px #eee;
+	margin-top: 15px;
+}
+.login-holder p{
+	color:#fff;
+	font-family: Arial Narrow;
+    padding-top: 20px;
+    float: left;
+    width: 350px;
+}
+.search-holder{
+	margin-top: 30px;
+}
+.search-holder h2{
+	font-family: Arial Narrow;
+    color: #fff;
+}
+.search-holder input[type="text"]{
+	    width: 100%;
+    background: #2b3942;
+    border: 0;
+    font-family: Arial Narrow;
+    font-size: 18px;
+    padding: 16px 0px;
+    border-radius: 2px;
+    text-indent: 20px;
+    outline: none;
+    color: #fff;
+    text-align: left;
+}
+.search-holder .login-icon{
+	width:60px;
+}
+.currentlogo-holder{
+	margin-top: 0px;
+}
+.currentlogo-holder img{
+	width: 150px;
+	height: 150px;
+}
+.menu-holder{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	position: relative;
+	padding-top: 30px;
+}
+.menu-holder ul{
+	list-style: none;
+}
+.menu-holder ul li{
+	color: #8a9ba1;
+	 font-family: Arial Narrow;	
+	     padding-bottom: 35px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+.menu-holder .active{
+	color:#fff;
+	font-weight: bold;
+}
+.menu-holder ul li span{
+	    color: #fff;
+    font-size: 18px;
+    float: left;
+    padding-right: 25px;
+}
+.domain-list,.domain-holder,.domain-table{
+	    background: #2b3942;
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+.domain-holder{
+	height: 365px;
+	}
+	.domain-table{
+		height: 400px;
+	}
+.hsgeneral{
+	margin-top: -60px;
+}
+.domain-table{
+	margin-top: 15px;
+	float: left;
+}
+.hsgeneral h3{
+	    font-family: Arial Narrow;
+    color: #8a9ba1;
+    float: left;
+    padding-left: 30px;
+    font-size: 20px;
+        width: 100%;
+    float: left;
+    text-align: left;
+}
+.domain-list .dlist{
+	    float: left;
+    width: 100%;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 15px;
+}
+.domain-list .dlist .domain{
+	    width: 180px;
+    height: 180px;
+    float: left;
+    margin-right: 30px;
+        margin-bottom: 50px;
+        cursor: pointer;
+            border: 1px solid #8a9ba1;
+            border-radius: 2px;
+}
+.domain .dselect-holder{
+	float: left;
+    width: 100%;
+    height: 18px;
+}
+.domain img{
+	    width: inherit;
+    height: 120px;
+    float: left;
+}
+.domain h4{
+	      color: #fff;
+    font-size: 15px;
+    float: left;
+    text-indent: 10px;
+}
+.domain span{
+	float: right;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 6px;
+    padding-right: 8px;
+}
+.create-domain,.add-page {
+	float: left;
+	width: 95%;
+	margin-top: 15px;
+}
+.create-domain ul,.add-page ul{
+	list-style: none;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+.create-domain ul li,.add-page ul li{
+	padding: 10px 0;
+	    border-bottom: 1px solid #31424b;
+	    width: inherit;
+}
+.create-domain ul li:last-child,.add-page ul li:last-child{
+	border:none;
+}
+.create-domain ul li input[type="text"],input[type="password"],input[type="email"],.add-page ul li input[type="text"],input[type="password"],input[type="email"],input[type="file"]{
+	width: inherit;
+	    text-align: left;
+	    text-indent: 30px;
+	    	padding: 15px 0;
+}
+.btn{
+	    color: #22313a;
+    background-color: #d9dee0;
+    border-color: #d9dee0;
+        transition: all;
+    transition-duration: .3s;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    border-radius: 2px;
+    user-select: none;
+}
+.btn-default{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.existing-list{
+	float: left;
+    width: inherit;
+        margin-top: 15px;
+}
+.existing-list table{
+	    width: 93%;
+    height: auto;
+    margin-left: 30px;
+}
+.existing-list table thead th{
+    text-align: left;
+    color: #fff;
+    font-family: Arial Narrow;
+    font-weight: normal;
+    font-size: 17px;
+    padding-bottom: 15px;
+    text-indent: 15px;
+}
+.existing-list table tbody tr:nth-child(odd){
+	background:rgba(255,255,255,.025)
+}
+.existing-list table tbody td{
+	    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 0;
+    text-indent: 15px;
+}
+.existing-list table tbody td button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+}
+.btnroot{
+	    float: left;
+    margin-left: 32px;
+}
+.menu-holder{
+	width: 100%;
+	float: left;
+}
+.menu-holder ul{
+	list-style: none;
+	width: 100%;
+}
+.menu-holder ul li{
+	border: none;
+}
+.menu-holder ul li input[type="text"]{
+	width: 45%;
+	border: 1px solid #31424b;
+}
+.menu-holder ul li button{
+	color:#000;
+	font-weight: bold;
+	font-size: 20px;
+	    margin-left: 10px;
+    width: 30px;
+}
+.section-name{
+	    float: left;
+    padding: 10px 2px;
+    border: 1px solid #31424b!important;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+.content-action{
+	    float: left;
+    width: 100%;
+    padding-left: 30px;
+}
+.content-action .action-area{
+	float: left;
+}
+.action-area label{
+	color: #fff;
+    font-family: Arial Narrow;
+    font-size: 17px;
+    padding-right: 10px;
+}
+.action-section{
+	    float: left;
+    width: 100%;
+    padding: 15px 0px;
+    background: #2b3942;
+    height: auto;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+.action-section input[type="text"]{
+	    float: left;
+    padding: 10px 25px;
+    border: 1px solid #fff;    
+    margin-left: 15px;
+}
