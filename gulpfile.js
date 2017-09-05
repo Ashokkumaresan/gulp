@@ -9,6 +9,9 @@ var plumber=require('gulp-plumber');
 var sourcemaps=require('gulp-sourcemaps');
 var less=require('gulp-less');
 var Lessauto=require('less-plugin-autoprefix');
+var zipproject=require('gulp-zip');
+var html_replace=require('gulp-replace');
+var del_files=require('del');
 var lessautoprefix=new Lessauto();
 
 var SCRIPTSPATH="public/scripts/**/*.js";
@@ -73,6 +76,31 @@ gulp.task("scripts",function(){
 //Images
 gulp.task("images",function(){
 	console.log("Images task started");
+});
+
+//exports
+gulp.task("export",function(){
+	console.log("Zip all files and folders");
+	return gulp.src('public/**/*')
+			.pipe(zipproject('website.rar'))
+			.pipe(gulp.dest('./'))
+});
+
+//replace
+
+gulp.task("path",['delete'],function(){
+	console.log("Replace reference path");
+	return gulp.src('public/**/*.html')
+			.pipe(html_replace("?1","?3"))
+			.pipe(html_replace("./images/","./dist/img/"))
+			.pipe(gulp.dest('public/dist/'));
+});
+
+//delete files
+
+gulp.task("delete",function(){
+	console.log("Delete all previous files");
+	del_files.sync(['public/dist/**']);
 });
 
 //watch
